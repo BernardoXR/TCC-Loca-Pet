@@ -1,9 +1,9 @@
 import Logo from "../assets/logo.svg"
 import Menu from "../assets/menu.svg"
-import Dog from "../assets/dog.svg"
-import Cat from "../assets/cat.svg"
+import Tutorial from "../assets/tutorial.svg"
+import TutorialDog from "../assets/tutorialDog.svg"
 
-export default function Home() {
+export default function Guia() {
   return (
     <div className="flex flex-col items-center w-full h-full">
         <div id="mostrarFechar" className="fixed flex z-20 justify-center items-center w-full h-full bg-white/[.60] hidden">
@@ -25,17 +25,21 @@ export default function Home() {
             <img src={Logo} alt="Logo locapet" className="w-24" />
         </header>
 
-        <section className="flex pt-14 px-8 gap-4 pb-3 items-center">
-            <h2 className="text-lg uppercase font-bold text-center"><span className="text-darkblue">A segurança do seu pet</span> <span className="text-orange">em primeiro lugar</span></h2>
-            
-            <img src={Dog} alt="Imagem de um cachorro com fundo colorido" />
-        </section>
+        <div className="bg-orange w-full py-4 pt-20 flex justify-center items-center">
+            <img src={Tutorial} alt="Imagem de um cachorro e uma lupa" />
+        </div>
 
-        <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center">
-            <img src={Cat} alt="Imagem de um gato com fundo colorido" />
+        <div className="flex px-8 pt-8">
+            <div className="flex flex-col gap-4 text-xs max-w-44">
+                <p>Tendo tanto a coleira quanto o programa de computador/celular, você poderá começar a usar o dispositivo.</p>
 
-            <p className="text-xs text-center">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
-        </section>
+                <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet, juntamente com os batimentos cardíacos e a temperatura.</p>
+            </div>
+
+            <div className="w-52">
+                <img src={TutorialDog} alt="Cachorro em exemplificação do produto" />
+            </div>
+        </div>
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
             <img src={Logo} alt="Logo locapet"/>
