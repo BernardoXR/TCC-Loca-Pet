@@ -5,8 +5,14 @@ module.exports = {
   theme: {
     colors: {
       'white': '#fff',
+      'black': '#000',
       'darkblue': '#003049',
       'orange': '#F26419'
+    },
+
+    fontFamily: {
+      'Sans': 'Josefin Sans',
+
     },
     extend: {},
   },
