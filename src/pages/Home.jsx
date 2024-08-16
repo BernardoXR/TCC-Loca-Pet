@@ -5,9 +5,20 @@ import Cat from "../assets/cat.svg"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full h-full">
+        <div id="mostrarFechar" className="fixed flex z-20 justify-center items-center w-full h-full bg-white/[.60] hidden">
+            <div className="bg-white text-darkblue font-semibold flex flex-col items-start px-10 p-6 gap-2 rounded-md text-lg">
+                <button onClick={fecharMenu}>x</button>
+                <a href=""><p>HOME</p></a>
+                <a href=""><p>GUIA DE USO</p></a>
+                <a href=""><p>MATERIAIS</p></a>
+                <a href=""><p>INTEGRANTES</p></a>
+                <a href=""><p>BIBLIOGRAFIA</p></a>
+            </div>
+        </div>
+
         <header className="w-full"> 
-            <button><img src={Menu} alt="Menu em formato hamburguer" className="fixed w-7 ml-14 mt-2 z-10" /></button>
+            <button onClick={usarMenu}><img src={Menu} alt="Menu em formato hamburguer" className="fixed w-7 ml-14 mt-2 z-10" /></button>
         </header>
 
         <header className="flex w-screen justify-center py-8 fixed bg-white">           
@@ -34,4 +45,12 @@ export default function Home() {
         </section>
     </div>
   )
+}
+
+function usarMenu() {
+    document.getElementById('mostrarFechar').classList.remove("hidden")
+}
+
+function fecharMenu() {
+    document.getElementById('mostrarFechar').classList.add("hidden")
 }
