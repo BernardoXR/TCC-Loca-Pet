@@ -11,8 +11,8 @@ module.exports = {
     },
 
     fontFamily: {
-      'Sans': 'Josefin Sans',
-
+      'jsans': 'Josefin-Sans',
+      'Lato': 'Lato'
     },
     extend: {},
   },

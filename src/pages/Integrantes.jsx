@@ -7,7 +7,7 @@ import Insta from "../assets/insta.svg"
 
 export default function Integrantes() {
   return (
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col items-center w-full h-full font-['lato']">
         <div id="mostrarFechar" className="fixed flex z-20 justify-center items-center w-full h-full bg-white/[.60] hidden">
             <div className="bg-white text-darkblue font-semibold flex flex-col items-start px-10 p-6 gap-2 rounded-md text-lg">
                 <button onClick={fecharMenu}>x</button>

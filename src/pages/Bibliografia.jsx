@@ -4,7 +4,7 @@ import Img from "../assets/imgcom.svg"
 
 export default function Bibliografia() {
   return (
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col items-center w-full h-full font-['lato']">
         <div id="mostrarFechar" className="fixed flex z-20 justify-center items-center w-full h-full bg-white/[.60] hidden">
             <div className="bg-white text-darkblue font-semibold flex flex-col items-start px-10 p-6 gap-2 rounded-md text-lg">
                 <button onClick={fecharMenu}>x</button>
@@ -26,7 +26,7 @@ export default function Bibliografia() {
 
         <img src={Img} alt="foto de um componente de hardware" className="w-full pt-16" />
 
-        <h3 className="text-base px-4 py-3">Nosso projeto foi desenvolvido com base em pesquisas e artigos científicos para garantir sua viabilidade.</h3>
+        <h3 className="text-base px-4 py-3 text-center">Nosso projeto foi desenvolvido com base em pesquisas e artigos científicos para garantir sua viabilidade.</h3>
 
         <div className="text-sm mx-4 mb-3 bg-darkblue text-white font-light text-center p-2">
             <p>JESUS , Gabrielly Maia Tavares De . MAUS-TRATOS E ABANDONO DE ANIMAIS DOMÉSTICOS E SEUS DESAFIOS NO BRASIL. 1. ed. GOIÂNIA-GO: BANCA EXAMINADORA, 2021. 25-30 p. v. 1.</p>
