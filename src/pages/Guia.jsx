@@ -36,7 +36,7 @@ export default function Guia() {
                 <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet, juntamente com os batimentos cardíacos e a temperatura.</p>
             </div>
 
-            <div className="w-52">
+            <div>
                 <img src={TutorialDog} alt="Cachorro em exemplificação do produto" />
             </div>
         </div>
