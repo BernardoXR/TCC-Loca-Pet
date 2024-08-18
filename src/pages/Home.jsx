@@ -17,30 +17,38 @@ export default function Home() {
             </div>
         </div>
 
-        <header className="w-full"> 
+        <header className="w-full lg:hidden"> 
             <button onClick={usarMenu}><img src={Menu} alt="Menu em formato hamburguer" className="fixed w-7 ml-14 mt-2 z-10" /></button>
         </header>
 
-        <header className="flex w-screen justify-center py-8 fixed bg-white">           
-            <img src={Logo} alt="Logo locapet" className="w-24" />
+        <header className="flex w-screen justify-center py-8 fixed bg-white lg:pb-14">           
+            <img src={Logo} alt="Logo locapet" className="w-24 lg:fixed lg:start-0 lg:ms-20 lg:mt-1" />
+
+            <div className="flex bg-white text-darkblue font-extrabold text-xl gap-8 max-lg:hidden fixed end-0 me-20">
+                <a href="/"><p>HOME</p></a>
+                <a href="/Guia"><p>GUIA DE USO</p></a>
+                <a href="/Materiais"><p>MATERIAIS</p></a>
+                <a href="/Integrantes"><p>INTEGRANTES</p></a>
+                <a href="/Ref"><p>BIBLIOGRAFIA</p></a>
+            </div>
         </header>
 
-        <section className="flex pt-14 px-8 gap-4 pb-3 items-center">
-            <h2 className="text-lg uppercase font-bold text-center"><span className="text-darkblue">A segurança do seu pet</span> <span className="text-orange">em primeiro lugar</span></h2>
+        <section className="flex pt-14 px-8 gap-4 pb-3 items-center lg:pt-24 lg:gap-24">
+            <h2 className="text-lg uppercase font-bold text-left lg:text-5xl lg:max-w-xs"><span className="text-darkblue">A segurança do seu pet</span> <span className="text-orange">em primeiro lugar</span></h2>
             
-            <img src={Dog} alt="Imagem de um cachorro com fundo colorido" />
+            <img src={Dog} alt="Imagem de um cachorro com fundo colorido" className="lg:w-96" />
         </section>
 
-        <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center">
-            <img src={Cat} alt="Imagem de um gato com fundo colorido" />
+        <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center lg:w-full lg:justify-center lg:gap-12">
+            <img src={Cat} alt="Imagem de um gato com fundo colorido" className="lg:w-96" />
 
-            <p className="text-xs text-center">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
+            <p className="text-xs text-center lg:text-2xl lg:max-w-lg">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
         </section>
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
             <img src={Logo} alt="Logo locapet"/>
 
-            <p className="max-w-52">Alguma dúvida? Entre em contato pelo 
+            <p className="max-w-52 text-darkblue">Alguma dúvida? Entre em contato pelo 
             e-mail: locapet.support@gmail.com</p>
         </section>
     </div>

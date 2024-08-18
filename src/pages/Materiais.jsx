@@ -14,7 +14,7 @@ import Fio from "../assets/fio.svg"
 export default function Materiais() {
 
   return (
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col items-center w-full h-full font-['lato']">
         <div id="mostrarFechar" className="fixed flex z-20 justify-center items-center w-full h-full bg-white/[.60] hidden">
             <div className="bg-white text-darkblue font-semibold flex flex-col items-start px-10 p-6 gap-2 rounded-md text-lg">
                 <button onClick={fecharMenu}>x</button>
@@ -26,15 +26,23 @@ export default function Materiais() {
             </div>
         </div>
 
-        <header className="w-full z-20 font-['lato']"> 
+        <header className="w-full z-20 font-['lato'] lg:hidden"> 
             <button onClick={usarMenu}><img src={Menu} alt="Menu em formato hamburguer" className="fixed w-7 ml-14 mt-2 z-10" /></button>
         </header>
 
-        <header className="flex w-screen justify-center py-8 fixed bg-white ">           
-            <img src={Logo} alt="Logo locapet" className="w-24" />
+        <header className="flex w-screen justify-center py-8 fixed bg-white lg:pb-14">           
+            <img src={Logo} alt="Logo locapet" className="w-24 lg:fixed lg:start-0 lg:ms-20 lg:mt-1" />
+
+            <div className="flex bg-white text-darkblue font-extrabold text-xl gap-8 max-lg:hidden fixed end-0 me-20">
+                <a href="/"><p>HOME</p></a>
+                <a href="/Guia"><p>GUIA DE USO</p></a>
+                <a href="/Materiais"><p>MATERIAIS</p></a>
+                <a href="/Integrantes"><p>INTEGRANTES</p></a>
+                <a href="/Ref"><p>BIBLIOGRAFIA</p></a>
+            </div>
         </header>
 
-        <section className="pt-20 flex flex-wrap justify-center gap-6 pb-2">
+        <section className="pt-20 flex flex-wrap justify-center gap-6 pb-2 max-w-7xl lg:pt-28">
               <div className="bg-darkblue w-72 p-8 text-white flex flex-col items-center gap-8 rounded-md">
                 <img src={Arduino} alt="Arduino Uno R3" />
 
@@ -103,7 +111,7 @@ export default function Materiais() {
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
             <img src={Logo} alt="Logo locapet"/>
 
-            <p className="max-w-52">Alguma dúvida? Entre em contato pelo 
+            <p className="max-w-52 text-darkblue">Alguma dúvida? Entre em contato pelo 
             e-mail: locapet.support@gmail.com</p>
         </section>
     </div>

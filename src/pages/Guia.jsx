@@ -17,34 +17,44 @@ export default function Guia() {
             </div>
         </div>
 
-        <header className="w-full"> 
+        <header className="w-full lg:hidden"> 
             <button onClick={usarMenu}><img src={Menu} alt="Menu em formato hamburguer" className="fixed w-7 ml-14 mt-2 z-10" /></button>
         </header>
 
-        <header className="flex w-screen justify-center py-8 fixed bg-white">           
-            <img src={Logo} alt="Logo locapet" className="w-24" />
+        <header className="flex w-screen justify-center py-8 fixed bg-white lg:pb-14">           
+            <img src={Logo} alt="Logo locapet" className="w-24 lg:fixed lg:start-0 lg:ms-20 lg:mt-1" />
+
+            <div className="flex bg-white text-darkblue font-extrabold text-xl gap-8 max-lg:hidden fixed end-0 me-20">
+                <a href="/"><p>HOME</p></a>
+                <a href="/Guia"><p>GUIA DE USO</p></a>
+                <a href="/Materiais"><p>MATERIAIS</p></a>
+                <a href="/Integrantes"><p>INTEGRANTES</p></a>
+                <a href="/Ref"><p>BIBLIOGRAFIA</p></a>
+            </div>
         </header>
 
-        <div className="bg-orange w-full py-4 pt-20 flex justify-center items-center">
-            <img src={Tutorial} alt="Imagem de um cachorro e uma lupa" />
+
+        
+        <div className="bg-orange w-full py-4 pt-20 flex justify-center items-center lg:pt">
+            <img src={Tutorial} alt="Imagem de um cachorro e uma lupa" className="lg:h-96" />
         </div>
 
-        <div className="flex px-8 pt-8">
-            <div className="flex flex-col gap-4 text-xs max-w-44">
+        <div className="flex px-8 pt-8 lg:items-center lg:gap-10">
+            <div className="flex flex-col gap-4 text-xs max-w-44 lg:text-2xl lg:max-w-lg text-darkblue lg:gap-12">
                 <p>Tendo tanto a coleira quanto o programa de computador/celular, você poderá começar a usar o dispositivo.</p>
 
                 <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet, juntamente com os batimentos cardíacos e a temperatura.</p>
             </div>
 
             <div>
-                <img src={TutorialDog} alt="Cachorro em exemplificação do produto" />
+                <img src={TutorialDog} alt="Cachorro em exemplificação do produto" className="lg:w-96"/>
             </div>
         </div>
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
             <img src={Logo} alt="Logo locapet"/>
 
-            <p className="max-w-52">Alguma dúvida? Entre em contato pelo 
+            <p className="max-w-52 text-darkblue">Alguma dúvida? Entre em contato pelo 
             e-mail: locapet.support@gmail.com</p>
         </section>
     </div>
