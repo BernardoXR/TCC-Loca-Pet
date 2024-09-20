@@ -39,15 +39,15 @@ export default function Guia() {
             <img src={Tutorial} alt="Imagem de um cachorro e uma lupa" className="lg:h-96" />
         </div>
 
-        <div className="flex px-8 pt-8 lg:items-center lg:gap-10">
-            <div className="flex flex-col gap-4 text-xs max-w-44 lg:text-2xl lg:max-w-lg text-darkblue lg:gap-12">
+        <div className="flex px-8 pt-8 lg:items-center lg:gap-10 max-sm:flex-col max-sm:items-center max-sm:gap-2">
+            <div className="flex flex-col gap-4 text-xs max-w-44 lg:text-2xl lg:max-w-lg text-darkblue lg:gap-12 max-sm:max-w-64">
                 <p>Tendo tanto a coleira quanto o programa de computador/celular, você poderá começar a usar o dispositivo.</p>
 
                 <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet, juntamente com os batimentos cardíacos e a temperatura.</p>
             </div>
 
             <div>
-                <img src={TutorialDog} alt="Cachorro em exemplificação do produto" className="lg:w-96"/>
+                <img src={TutorialDog} alt="Cachorro em exemplificação do produto" className="lg:w-96 max-sm:w-48"/>
             </div>
         </div>
 

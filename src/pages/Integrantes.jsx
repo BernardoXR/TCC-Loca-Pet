@@ -37,9 +37,9 @@ export default function Integrantes() {
 
         <h1 className="pt-24 uppercase font-bold text-xl text-darkblue mb-16 lg:text-3xl lg:pt-40 lg:mb-24  lg:font-extrabold">Conheça nossa <span className="text-orange">equipe</span></h1>
         
-        <section className="flex text-xs text-white font-light gap-2 lg:text-2xl lg:font-normal lg:mb-20 lg:gap-7">
-            <div className="bg-darkblue w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6">
-                <img src={Anny} alt="Foto da integrante Anny" className="h-20 lg:h-48" />
+        <section className="flex text-xs text-white font-light gap-6 lg:text-2xl lg:font-normal lg:mb-20 lg:gap-7 max-sm:flex-col text-center">
+            <div className="bg-darkblue w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6 max-sm:w-40">
+                <img src={Anny} alt="Foto da integrante Anny" className="h-20 lg:h-48 max-sm:h-32" />
 
                 <div className="flex flex-col gap-1 lg:gap-3">
                     <h2>Anny Elly Pantoja</h2>
@@ -50,20 +50,20 @@ export default function Integrantes() {
                 <a href="https://www.instagram.com/annyelly_pantoja?igsh=djVqYWNmdDNlbDZ3"><img src={Insta} alt="Foto da logo do instagram" className="lg:w-8"/></a>
             </div>
 
-            <div className="bg-orange w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6">
-                <img src={Bernardo} alt="Foto do integrante Bernardo" className="h-20 lg:h-48" />
+            <div className="bg-orange w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6 max-sm:w-40">
+                <img src={Bernardo} alt="Foto do integrante Bernardo" className="h-20 lg:h-48 max-sm:h-32" />
 
                 <div className="flex flex-col gap-1 lg:gap-3">
                     <h2>Bernardo Raposo</h2>
 
-                    <p> Futuro designer, responsável pela interface do site e aspectos estéticos do nosso projeto</p>
+                    <p> Futuro designer, responsável pela interface do site e aspectos estéticos do nosso projeto físico e web.</p>
                 </div>
 
                 <a href="https://www.instagram.com/last_zey?igsh=MThrMDlrM3hjazlnbQ%3D%3D&utm_source=qr"><img src={Insta} alt="Foto da logo do instagram" className="lg:w-8" /></a>
             </div>
 
-            <div className="bg-darkblue w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6">
-                <img src={Nicole} alt="Foto da integrante Nicole" className="h-20 lg:h-48" />
+            <div className="bg-darkblue w-28 p-3 flex flex-col gap-4 items-center lg:w-60 lg:p-6 lg:gap-6 max-sm:w-40">
+                <img src={Nicole} alt="Foto da integrante Nicole" className="h-20 lg:h-48 max-sm:h-32" />
 
                 <div className="flex flex-col gap-1 lg:gap-3">
                     <h2>Nicole de Sá</h2>

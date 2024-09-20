@@ -33,16 +33,16 @@ export default function Home() {
             </div>
         </header>
 
-        <section className="flex pt-14 px-8 gap-4 pb-3 items-center lg:pt-24 lg:gap-24">
-            <h2 className="text-lg uppercase font-bold text-left lg:text-5xl lg:max-w-xs"><span className="text-darkblue">A segurança do seu pet</span> <span className="text-orange">em primeiro lugar</span></h2>
+        <section className="flex pt-14 px-8 gap-4 pb-3 items-center lg:pt-24 lg:gap-24 max-sm:flex-col">
+            <h2 className="text-lg uppercase font-bold text-left lg:text-5xl lg:max-w-xs max-sm:order-2 max-sm:px-9 max-sm:text-xl max-sm:pb-4 max-sm:text-center"><span className="text-darkblue">A segurança do seu pet</span> <span className="text-orange">em primeiro lugar</span></h2>
             
-            <img src={Dog} alt="Imagem de um cachorro com fundo colorido" className="lg:w-96" />
+            <img src={Dog} alt="Imagem de um cachorro com fundo colorido" className="lg:w-96 max-sm:order-1 max-sm:w-72 " />
         </section>
 
-        <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center lg:w-full lg:justify-center lg:gap-12">
-            <img src={Cat} alt="Imagem de um gato com fundo colorido" className="lg:w-96" />
+        <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center lg:w-full lg:justify-center lg:gap-12 max-sm:flex-col">
+            <img src={Cat} alt="Imagem de um gato com fundo colorido" className="lg:w-96 max-sm:w-72" />
 
-            <p className="text-xs text-center lg:text-2xl lg:max-w-lg">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
+            <p className="text-xs text-center lg:text-2xl lg:max-w-lg max-sm:text-base max-sm:px-6">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
         </section>
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
