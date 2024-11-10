@@ -43,13 +43,21 @@ export default function Guia() {
             <div className="flex flex-col gap-4 text-xs max-w-44 lg:text-2xl lg:max-w-lg text-darkblue lg:gap-12 max-sm:max-w-64">
                 <p>Tendo tanto a coleira quanto o programa de computador/celular, você poderá começar a usar o dispositivo.</p>
 
-                <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet, juntamente com os batimentos cardíacos e a temperatura.</p>
+                <p>Utilizando a tecnologia LoRa, a interface do aplicativo mostrará a localização do seu pet.</p>
             </div>
 
             <div>
                 <img src={TutorialDog} alt="Cachorro em exemplificação do produto" className="lg:w-96 max-sm:w-48"/>
             </div>
         </div>
+
+        <div className="w-8/12 h-screen mt-6 max-sm:h-36">
+            <iframe src="https://www.youtube.com/embed/2fvrlBYOC5Q" frameborder="0" allowFullScreen className="w-full h-full"></iframe>
+        </div>
+
+        <div className="w-8/12 h-screen mt-6 max-sm:h-36">
+            <iframe src="https://www.youtube.com/embed/icZzF43tmME" frameborder="0" allowFullScreen className="w-full h-full"></iframe>
+        </div>  
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
             <img src={Logo} alt="Logo locapet"/>

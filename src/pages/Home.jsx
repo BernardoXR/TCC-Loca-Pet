@@ -42,7 +42,7 @@ export default function Home() {
         <section className="bg-darkblue flex px-4 py-10 gap-4 text-white items-center lg:w-full lg:justify-center lg:gap-12 max-sm:flex-col">
             <img src={Cat} alt="Imagem de um gato com fundo colorido" className="lg:w-96 max-sm:w-72" />
 
-            <p className="text-xs text-center lg:text-2xl lg:max-w-lg max-sm:text-base max-sm:px-6">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>, sensor de <span className="text-orange">temperatura</span>  e sensor de <span className="text-orange">batimentos cardíacos</span>.</p>
+            <p className="text-xs text-center lg:text-2xl lg:max-w-lg max-sm:text-base max-sm:px-6">Nossa coleira possui um design anatômico e uma bateria durável. O dispositivo conta com <span className="text-orange">GPS</span>.</p>
         </section>
 
         <section className="flex px-6 text-xs py-8 w-full justify-between text-end">
